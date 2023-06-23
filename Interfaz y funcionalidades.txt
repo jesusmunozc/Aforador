@@ -1,0 +1,66 @@
+Ventana Principal (Interfaz)
+1. La ventana principal cuenta con 2 columnas de 13 botones cada colummna
+2. cada boton debe tener un nombre que son: Peatón, Bici, Auto, Moto, Bus Mio, Buc Mio, Buc,Bus,
+C2P, C2G, C3-C4, C5, Campero. Respectivamente de arriva hacia abajo. 
+3. Encima de cada columna debe haber un recuadro que se pueda modificar su texto 
+mientras está en ejecución el programa. 
+4. El tamaño de los botones pertenecientes a las colummnas de 13 botones y de los 
+recuadros de texto pueden ser de 0.7cm de alto
+x 2.2cm de ancho, con una separación vertical entre botones de colummnas de 0.3cm 
+y separación entre columnas de 0.4cm. 
+5. Adicional debe tener dos botones que permita agregar y eliminar una nueva colummna
+con las mismas caracteristicas de la primera (tanto físicas como funcionales),
+deben tener un tamaño de 0.5cm x 0.5 cm con un simbolo de "+" para agregar y un simbolo de 
+"-" para eliminar, estarán ubicados en la parte superior izquierda de la ventana principal arriba del
+cuadro de texto con una separacion vertical de 1cm y que los botones estén a una separación de 0.5cm
+uno al lado del otro (la primera colummna es de referencia y no se puede eliminar y solo se pueden 
+agregar 6 colummnas como máximo). 
+6. Debajo de cada colummna ya sea existente o que se agregue, debe haber un boton alineado a la
+izquierda (alineado con los botones) de tamaño 0.5cm x 0.5cm con separación de 0.4cm vertical,
+que me dirija a una nueva ventana llamada "Tabla de valores"
+7. Debe haber un botón de tamaño 0.5cm de alto por 2.2cm de ancho llamado "Guardar +15min" 
+8. Debe tener un boton de tamaño 0.5cm de alto por 2.2cm de ancho llamado "Borrar Registros" 
+al lado del botón "Guardar +15min" color rojo con una separación de 4cm horizontalmente.
+9. Los botones en la parte superior deben tener una separación de 1cm respecto a las columnnas 
+que las confirman los 13 botones y el cuadro de texto editable.
+
+Ventana Tabla de valores (interfaz)
+
+1. La ventana tabla de valores es una matriz n x 13 (o una tabla) que guarda los datos al precionar 
+los botones de la ventana principal. cada columna en la parte superior de la tabla debe tener los 
+nombres Auto, Campero, Bus Mio, Buc Mio, Buc, Bus, C2P, C2G, C3-C4, C5, Moto, Bici, Peatón. Respectivamente
+de izquierda a derecha. Y adicional una colummna a la izquierda con un ID secuencial. 
+2. Debe tener un boton llamado "Copiar" de tamaño 0.7cm de alto por 2.2cm de ancho en color verde. 
+
+Funcionalidades de las ventanas
+
+1. Cada botón hará una sumatoria que empezará en cero "0" cada vez que se de un click sobre el botón
+sumara un "1" al valor anterior y los valores se irán almacenando en la primera fila con el primer ID
+existente en la ventana "tabla de valores" (pero solo se almacenará en la "tabla de valores
+correspondiente a la colummna en la que se ejecuta la acción sobre los botones")
+2. El orden en el que se almacenan es: El nombre del botón corresponde al nombre de la colummna en 
+la ventana "tabla de valores" (puedes poner "tabla de valores 1,2,3.. " a la ventana según corresponda
+la colummna)
+3. El botón "Guardar +15min" saltará a la siguiente fila de la tabla en la ventana "tabla de valores"
+(por ejemplo: si la anterior fila tenía un ID de 1, al precionar "Guardar +15min" 
+empezará el conteo en la fila con ID 2)
+4. El botón "Guardar +15min" al saltar a la siguiente fila llenará los espacios donde no hayan 
+datos registrados en esa fila con un valor de "0" antes de hacer el salto
+5. El botón "Guardar +15min" tendrá inicialmente un color verde, al precionarse ejecutará el guardado
+de los datos saltando a la siguiente fila y se pondrá de color rojo, al volver a precionar se pondrá 
+de color verde nuevamente para poder volver a dar la opción de guardado y así sucesivamente.
+6. El botón "Borrar Registros" eliminará todos los datos de todas las tablas existentes y reiniciando
+el ID en 1 también. Pero este botón debe hacer aparecer una ventana con una alerta donde diga 
+"ESTA A PUNTO DE BORRAR TODO EL REGISTRO DE DATOS EXISTENTE ¿DESEA CONTINUAR?" con opcion de 
+aceptar o cancelar, si da en cancelar solo quita la ventana sin borrar, si da en aceptar que aparezca otra 
+ventana que diga "CONFIRME NUEVAMENTE PARA BORRAR" con opción de aceptar o cancelar, si da en cancelar 
+solo cierra la ventana sin borrar, si da en aceptar se borrará todos los datos como se mencionó anteriormente. 
+7. El botón "Copiar" en la ventana tabla de registro, copiará en ese mismo orden todos los datos almacenados
+en esa tabla exeptuando el ID y que aparezca un mensaje que indique se se ha copiado al portapapeles los datos.
+8. mantener la ventana principal siempre al frente incluso cuando se interactúa con otras aplicaciones en modo 
+de pantalla completa.
+
+
+
+
+
